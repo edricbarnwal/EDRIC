@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    background-color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: .1rem solid red;  */
+
+}
+
+
+
+header > nav > ul > li{
+    color: white;
+}
+
+
+/* 1st Secttion ---> Intro Start*/
+
+.intro {
+  justify-content: center;   
+  align-items: center;      
+  min-height: 50vh;         
+}
+
+
+.flex{
+    display: flex;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 4rem;
+    align-items: center;
+}
+
+.gap-4{
+    gap: 4rem;
+}
+
+#name{
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--accent-neon), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    animation: glitch 2s infinite;
+}
+
+.i-sec p{
+    color: white;
+    font-size: 20px;
+}
+
+
+.c-btn{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(175, 41, 208);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+.i-sec .coder-img{
+    flex: 1;
+}
+
+
+.coder-img > img{
+    border-radius: 50px;
+}
+
+
+/* 1st Section End*/
+
+.edricimg{
+    display: flex;
+    height: 220px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+
+
+/* 2nd Section ---> Skills Start */
+
+
+
+
+
+.sk-heading{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 40px;
+}
+
+.sk-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+.skill-card > img{
+    height: 150px;
+    color: white;
+}
+
+.skill-card > h4{
+    color: white;
+    text-align: center;
+    
+}
+
+.excel {
+  border: 2px solid #217346;
+  box-shadow: 0 0 10px #217346, 0 0 20px #217346, 0 0 30px #217346;
+}
+.excel img {
+  background-color: #217346;
+  border: 3px solid #217346;
+}
+.excel h4 {
+  font-size: 20PX;
+  color: #217346;
+}
+
+.python{
+    border: 2px solid aqua;
+    box-shadow: 0 0 10px aqua, 0 0 10px aqua;
+}
+.python img{
+    background-color: aqua;
+    border: 3px solid aqua;
+}
+.python h4{
+    font-size: 20px;
+    color: aqua;
+}
+
+
+.html{
+    border: 2px solid #E34F26;
+    box-shadow: 0 0 10px #E34F26, 0 0 20px #E34F26;
+}
+.html img{
+    border: 3px solid #E34F26;
+    background-color: #E34F26;
+
+}
+.html h4{
+    font-size: 20px;
+    color: #E34F26;
+}
+
+
+.css{
+    border: 2px solid #663399;
+    box-shadow: 0 0 10px #663399, 0 0 20px #663399;
+}
+.css img{
+    border: 3px solid #663399;
+    background-color: #663399;
+}
+.css h4{
+    font-size: 20px;
+    color: #663399;
+}
+
+
+.javascript{
+    border: 3px solid #F7DF1E;
+    box-shadow: 0 0 10px #F7DF1E, 0 0 20px #F7DF1E;
+}
+.javascript img {
+    background-color: yellow;
+    border: 3px solid #F7DF1E;
+}
+.javascript h4{
+    font-size: 20px;
+    color: #F7DF1E;
+}
+
+/* 2nd Section ---> Skills End */
+
+
+
+/* 3rd Section ---> Project Start */
+
+
+.projects > h4 {
+    color: antiquewhite;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+/* 3rd Section ---> Projects End */
+
+
+.project-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #E34F26;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: flex-start;
+
+}
+
+.project-card div{
+    background-color: #E34F26;
+}
+
+.project-card img{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+
+}
+
+.project-card h3{
+    font-size: 20px;
+    color: white;
+    background-color: #E34F26;
+}
+
+
+.project-card p{
+    color: white;
+    background-color: #E34F26;
+}
+
+
+.project-card a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer{
+    background-color: white;
+}
+
+footer > h3{
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;   /* stack items */
+    text-align: center;       /* center text */
+  }
+
+  .coder-img {
+    margin-top: 20px;         /* add space above image */
+  }
+
+  .coder-img img {
+    max-width: 100%;          /* responsive image */
+    height: auto;
+  }
+
+}
+
+
+
