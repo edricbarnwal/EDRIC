@@ -1,4 +1,19 @@
 
+:root {
+        --bg-primary: #0a0a0a;
+        --bg-secondary: #1a1a1a;
+        --accent-neon: #00ffff;
+        --accent-purple: #ff00ff;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(0, 255, 255, 0.2);
+        --shadow-neon: 0 0 20px rgba(0, 255, 255, 0.5);
+        --shadow-glow: 0 0 30px rgba(255, 0, 255, 0.3);
+      }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     background-color: black;
@@ -38,15 +53,15 @@ header > nav > ul > li{
     gap: 4rem;
 }
 
-#name{
-    font-size: 4rem;
-    background: linear-gradient(45deg, var(--accent-neon), var(--accent-purple));
-    -webkit-background-clip: text;
+#name {
+    background: linear-gradient(to right, #ff69b4, #00bfff); 
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 1rem;
-    animation: glitch 2s infinite;
+    font-size: 35px;
 }
+
+
+
 
 .i-sec p{
     color: white;
@@ -63,6 +78,12 @@ header > nav > ul > li{
     padding: 10px;
     display: inline-block;
     margin-top: 5px;
+    box-shadow: 0 0 15px rgb(175, 41, 208);
+}
+
+.c-btn:hover {
+    box-shadow: 0 0 10px rgb(175, 41, 208), 0 0 30px rgb(175, 41, 208);
+    cursor: pointer;
 }
 
 
@@ -75,24 +96,65 @@ header > nav > ul > li{
     border-radius: 50px;
 }
 
-
-/* 1st Section End*/
-
-.edricimg{
-    display: flex;
-    height: 220px;
-    border-radius: 20px;
-    align-items: center;
-}
-
-
-
 /* 2nd Section ---> Skills Start */
 
+.skills>h2{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 40PX;
+}
+
+.skill-card {
+        display: flex;
+        align-items: center;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+      }
+
+    
+.skill-card img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        filter: drop-shadow(var(--shadow-neon));
+      }
+
+.skill-card h3 {
+        color: var(--accent-purple);
+        margin-bottom: 1rem;
+      }
+
+.skill-card p {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+      }
 
 
 
 
+
+
+
+
+
+
+/* 2nd Section ---> Skills End */
+
+
+
+
+
+
+/* 3rd Section ---> Tools Start */
 .sk-heading{
     color: antiquewhite;
     text-align: center;
@@ -106,15 +168,12 @@ header > nav > ul > li{
 }
 
 
-
-
-
-.skill-card > img{
+.tool-card > img{
     height: 150px;
     color: white;
 }
 
-.skill-card > h4{
+.tool-card > h4{
     color: white;
     text-align: center;
     
@@ -189,7 +248,7 @@ header > nav > ul > li{
     color: #F7DF1E;
 }
 
-/* 2nd Section ---> Skills End */
+/* 3rd Section ---> Tools End */
 
 
 
@@ -203,10 +262,62 @@ header > nav > ul > li{
 
 }
 
+
+
+.project-card {
+        display: flex;
+        align-items: center;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+      }
+
+      .project-card:hover {
+        transform: translateX(10px);
+        box-shadow: var(--shadow-glow);
+        border-color: var(--accent-purple);
+      }
+
+      .project-card img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        filter: drop-shadow(var(--shadow-neon));
+      }
+
+      .project-card h3 {
+        color: var(--accent-neon);
+        margin-bottom: 1rem;
+      }
+
+      .project-card p {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+      }
+
+      .project-card a {
+        color: var(--accent-purple);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .project-card a:hover {
+        color: var(--accent-neon);
+      }
+
 /* 3rd Section ---> Projects End */
 
 
-.project-card{
+/* .project-card{
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -251,10 +362,13 @@ header > nav > ul > li{
     padding: 10px 30px;
     margin-top: 10px;
     display: inline-block;
-}
+} */
 
 footer{
     background-color: white;
+    width: 100%;
+    padding: 1px 0;
+    position: relative;
 }
 
 footer > h3{
